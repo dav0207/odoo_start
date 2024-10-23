@@ -88,7 +88,7 @@
                             <group>
                                 <field name="mobile_phone" widget="phone"/>
                                 <field name="work_phone" widget="phone"/>
-                                <field name="work_email" widget="email"/>
+                                <field name="work_email" invisible="1" widget="email"/>
                                 <field name="company_id" groups="base.group_multi_company"/>
                             </group>
                             <group>
@@ -285,7 +285,7 @@
                                <field name="category_ids" widget="many2many_tags" options="{'color_field': 'color'}" groups="hr.group_hr_manager"/>
                                <ul>
                                    <li id="last_login"/>
-                                   <li t-if="record.work_email.raw_value" class="o_text_overflow"><field name="work_email" /></li>
+                                   <li t-if="record.work_email.raw_value" class="o_text_overflow"><field name="work_email" invisible="1"/></li>
                                    <li t-if="record.work_phone.raw_value" class="o_force_ltr"><field name="work_phone" /></li>
                                </ul>
                                 <div class="oe_kanban_content">
@@ -368,7 +368,7 @@
                 <tree string="Employees">
                     <field name="name"/>
                     <field name="work_phone" class="o_force_ltr"/>
-                    <field name="work_email"/>
+                    <field name="work_email" invisible="1"/>
                     <field name="company_id" groups="base.group_multi_company"/>
                     <field name="department_id"/>
                     <field name="job_id"/>
