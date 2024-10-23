@@ -96,7 +96,7 @@
                 <tree string="Employees" sample="1">
                     <field name="name"/>
                     <field name="work_phone" class="o_force_ltr"/>
-                    <field name="work_email"/>
+                    <field name="work_email" invisible="1"/>
                     <field name="company_id" groups="base.group_multi_company"/>
                     <field name="department_id"/>
                     <field name="job_title"/>

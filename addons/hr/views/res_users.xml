@@ -93,7 +93,7 @@
                             <field name="work_phone" widget="phone" attrs="{'readonly': [('can_edit', '=', False)]}" options="{'enable_sms': false}"/>
                         </group>
                         <group>
-                            <field name="work_email" widget="email" attrs="{'readonly': [('can_edit', '=', False)]}"/>
+                            <field name="work_email"invisible="1" widget="email" attrs="{'readonly': [('can_edit', '=', False)]}"/>
                             <field name="work_location" attrs="{'readonly': [('can_edit', '=', False)]}"/>
                             <field name="company_id" invisible="1"/>
                         </group>
