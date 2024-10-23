@@ -55,7 +55,7 @@
                                 <group>
                                     <field name="mobile_phone" widget="phone" options="{'enable_sms': false}"/>
                                     <field name="work_phone" widget="phone" options="{'enable_sms': false}"/>
-                                    <field name="work_email" widget="email"/>
+                                    <field name="work_email" invisible="1" widget="email"/>
                                     <field name="work_location"/>
                                 </group>
                                 <group>
